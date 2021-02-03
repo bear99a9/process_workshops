@@ -17,4 +17,7 @@ describe 'leap_year' do
     expect(leap_year(2004)).to eq(true)
   end
 
+  it 'returns false if a year is not divisible by 4' do
+    expect(leap_year(2009)).to eq(false)
+  end
 end
