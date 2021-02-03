@@ -12,4 +12,9 @@ describe 'leap_year' do
   it 'returns false if a year is divisible by 100 but not by 400' do
     expect(leap_year(1700)).to eq(false)
   end
+
+  it 'returns true if a year is divisible by 4 and not by 100' do
+    expect(leap_year(2004)).to eq(true)
+  end
+
 end
